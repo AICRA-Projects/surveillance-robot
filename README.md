@@ -8,7 +8,16 @@ placement and diffusion. The system provides continuous visual monitoring throug
 robot and sends continuous data to the control unit. Basically three modes of operations are provided i.e. RF mode, 
 DTMF mode and Automatic mode.
 
-## Raspberry pi based 
+## How to operate: 
+### step 1: Give Power to the robot by connecting White Usb Cable with USB connector of Power Bank 
+### step 2: Press "On" in Red switch 
+### step 3: Type the link in webBrowser http://Ip_address:5000
+### step 4: once you visit in the link you will find 4 different modes will be displayed 
+### step 5: Manual mode : will be display with control panel of robot movements and camera which you can use for survillance purpose 
+### step 6: Face Tracking mode : It will track your face as you move right or left , face detection is enabled with A.I 
+### step 7: Color detection mode : its non locomotion mode for the robot but used for detecting the color from camera , USER can bring RGB object in front of it 
+### step 8: Auto pilot mode : Its a autonomous mode of the robot without any manuall instruction robot will move decision making Proces done by using sensors and displayed by camera## Raspberry pi based 
+
 # Methodology
 Hardware connections very important which provides the overview of circuit in the project , if connections are correct then output will be displayed on the screen of LCD   
 Python is a wonderful and powerful programming language that's easy to use (easy to read and write) and, with Raspberry Pi, lets you connect your project to the real world.
@@ -18,15 +27,15 @@ Python is a wonderful and powerful programming language that's easy to use (easy
 * Install Raspberry pi GPIO packages: pip install RPi.GPIO
 * Type " pinout " in Terminal of Raspberry pi 
 ## Step 2 : Install Opencv in Raspberry pi  
-###### to get the current status
+##### to get the current status
 * $ sudo rpi-eeprom-update
-###### if needed, to update the firmware
+#### if needed, to update the firmware
 * $ sudo rpi-eeprom-update -a
 * $ sudo reboot 
-###### Version check.
+#### Version check.
 Before you install OpenCV on your Raspberry Pi 4, it is time for a final version check. Many readers just jump into the guide, skipping the introduction, often because they have already an operating system working. For those, please give the command uname -a and check your version.
 * $ python3 --version
-###### Dependencies.
+#### Dependencies.
 The OpenCV software uses other third-party software libraries. These have to be installed first. Some come with the Raspbian operating system, others may have been gathered over time, but it's better to be safe than sorry, so here is the complete list. Only the latest packages are installed by the procedure.
 * $ sudo apt-get update
 * $ sudo apt-get upgrade
@@ -48,21 +57,21 @@ The OpenCV software uses other third-party software libraries. These have to be 
 * $ unzip opencv_contrib.zip
 * $ mv opencv-4.5.0 opencv
 * $ mv opencv_contrib-4.5.0 opencv_contrib
-###### Install a virtual environment.
+#### Install a virtual environment.
 Step one is some administration. We only use Python 3 because the support of Python 2.7 has stopped at the beginning of 2020. You have first to determine your Python 3 version   and location.
 The Python location in the above commands was /usr/bin/python3.7. This location is passed as an argument in the echo command. The next step is installing the virtual      environment software. This can be done with the following commands.
 * $ sudo pip3 install virtualenv
 * $ sudo pip3 install virtualenvwrapper
 * $ echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.7" >> ~/.bashrc
-###### reload profile
+#### reload profile
 * $ source ~/.bashrc
 * $ echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.bashrc
 * $ echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.bashrc
 * $ source ~/.bashrc
 * $ mkvirtualenv cv450
-###### without sudo!!!!
+#### without sudo!!!!
 * $ pip3 install numpy
-##### Build Make 
+#### Build Make 
 * $ cd ~/opencv/
 * $ mkdir build
 * $ cd build
@@ -96,13 +105,13 @@ The Python location in the above commands was /usr/bin/python3.7. This location 
 * $ sudo /etc/init.d/dphys-swapfile stop
 * $ sudo /etc/init.d/dphys-swapfile start
 * $ make -j4
-###### Make.
+#### Make
 Now everything is ready for the great build. This takes a lot of time. Be very patient is the only advice here. Don't be surprised if at 99% your build seems to be crashed. That is 'normal' behaviour. Even when your CPU Usage Monitor gives very low ratings like 7%. In reality, your CPU is working so hard it has not enough time to update these usage numbers correctly.
 You can speed things up with four cores working simultaneously (make -j4). On a Raspberry Pi 4, it takes just over an hour to build the whole library. Sometimes the system crashes for no apparent reason at all at 99% or even 100%. In that case, restart all over again, as explained at the end of this page, and rebuild with make -j1.
 Probably you get a whole bunch of warnings during the make. Don't pay to much attention to it. They are generated by subtle differences in template overload functions due to little version differences. 
 * $ sudo make install
 * $ sudo ldconfig
-###### cleaning (frees 300 KB)
+#### cleaning (frees 300 KB)
 * $ make clean
 * $ sudo apt-get update
   
@@ -132,4 +141,3 @@ Probably you get a whole bunch of warnings during the make. Don't pay to much at
   * DC BO motors
   * Battery and power bank
   * Servo Motor 
-
