@@ -117,12 +117,12 @@ Probably you get a whole bunch of warnings during the make. Don't pay to much at
 ## Step 3: Steps to implement human Face recognition with Python & OpenCV:
 1. Imports:
 
-import cv2
-import os
+#### import cv2
+#### import os
 2. Initialize the classifier:
 
-cascPath=os.path.dirname(cv2.__file__)+"/data/haarcascade_frontalface_default.xml"
-faceCascade = cv2.CascadeClassifier(cascPath)
+#### cascPath=os.path.dirname(cv2.__file__)+"/data/haarcascade_frontalface_default.xml"
+#### faceCascade = cv2.CascadeClassifier(cascPath)
 
 3. Apply faceCascade on webcam frames:
 
