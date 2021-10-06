@@ -156,3 +156,19 @@ code : https://github.com/AICRA-Projects/surveillance-robot/blob/main/face.py
   check each script for the interface 
 #### Step 7 :
   Check power Connectivity with power bank and lithuim ion battery 
+## Step 5 : Auto run script in Raspberry pi 
+Method 1: rc.local
+You will need root-level access to modify rc.local, so do so with sudo:
+
+#### sudo nano /etc/rc.local
+Scroll down, and just before the exit 0 line, enter the following:
+
+#### python /home/pi/blink.py &
+
+## step 6: Give Power to the robot by connecting White Usb Cable with USB connector of Power Bank 
+## step 7: Press "On" in Red switch 
+## step 8: check IP in Raspberry pi and Type the link in webBrowser http://Ip_address:5000
+## Conclusion :
+A surveillance robot which can be integrated into any kind of household. The base controller of the bot will be the powerful Raspberry Pi 3 Model B. A webcam attached to the Pi monitors the area and sends a notification when any trespassing or obtrusion is detected.
+ 
+ 
