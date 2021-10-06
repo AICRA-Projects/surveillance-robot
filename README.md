@@ -16,7 +16,18 @@ DTMF mode and Automatic mode.
 ### step 5: Manual mode : will be display with control panel of robot movements and camera which you can use for survillance purpose 
 ### step 6: Face Tracking mode : It will track your face as you move right or left , face detection is enabled with A.I 
 ### step 7: Color detection mode : its non locomotion mode for the robot but used for detecting the color from camera , USER can bring RGB object in front of it 
-### step 8: Auto pilot mode : Its a autonomous mode of the robot without any manuall instruction robot will move decision making Proces done by using sensors and displayed by camera## Raspberry pi based 
+### step 8: Auto pilot mode : Its a autonomous mode of the robot without any manuall instruction robot will move decision making Proces done by using sensors and displayed by camera
+## Hardware 
+  * Raspberry Pi 4 
+  * Arduino Nano 
+  * Ultrasonic sensor x 3
+  * USB Camera 
+  * Omni Wheels
+  * DC BO motors
+  * Battery and power bank
+  * Servo Motor 
+
+## Raspberry pi based 
 
 # Methodology
 Hardware connections very important which provides the overview of circuit in the project , if connections are correct then output will be displayed on the screen of LCD   
@@ -126,31 +137,9 @@ Probably you get a whole bunch of warnings during the make. Don't pay to much at
 
 3. Apply faceCascade on webcam frames:
 
-video_capture = cv2.VideoCapture(0)
-while True:
-    # Capture frame-by-frame
-    ret, frames = video_capture.read()
-    gray = cv2.cvtColor(frames, cv2.COLOR_BGR2GRAY)
-    faces = faceCascade.detectMultiScale(
-        gray,
-        scaleFactor=1.1,
-        minNeighbors=5,
-        minSize=(30, 30),
-        flags=cv2.CASCADE_SCALE_IMAGE
-    )
-    # Draw a rectangle around the faces
-    for (x, y, w, h) in faces:
-        cv2.rectangle(frames, (x, y), (x+w, y+h), (0, 255, 0), 2)
-    # Display the resulting frame
-    cv2.imshow('Video', frames)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
-4. Release the capture frames:
+code : https://github.com/AICRA-Projects/surveillance-robot/blob/main/face.py
 
-video_capture.release()
-cv2.destroyAllWindows()
-
-  
+## Step 4: Steps To host web host by Pyhton3 flask Package : 
 ## Install Web Hosting 
 * pip install Flask
 #### Step 1: 
@@ -167,12 +156,3 @@ cv2.destroyAllWindows()
   check each script for the interface 
 #### Step 7 :
   Check power Connectivity with power bank and lithuim ion battery 
-## Hardware 
-  * Raspberry Pi 4 
-  * Arduino Nano 
-  * Ultrasonic sensor x 3
-  * USB Camera 
-  * Omni Wheels
-  * DC BO motors
-  * Battery and power bank
-  * Servo Motor 
