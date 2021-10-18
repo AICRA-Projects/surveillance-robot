@@ -27,10 +27,12 @@ DTMF mode and Automatic mode.
   * Battery and power bank
   * Servo Motor 
 ## Circuit diagram
+# Fig(1) raspberry pi with I2C connection
 ![Rasberry pi with UNO (1)](https://user-images.githubusercontent.com/42414598/137720694-79d02df0-4574-4431-9101-5f597c1c574f.jpg)
+# Fig(2) raspberry pi with I2C connection and Motor driver 
 ![Rasberry pi with UNO an MOTOR DRIVER](https://user-images.githubusercontent.com/42414598/137720945-d0c3d033-1a93-423b-a033-ddd2fcbd47cc.jpg)
+# Fig(3) raspberry pi with I2C connection and Motor driver with Wheels
 ![Rasberry pi with UNO and MOTOR DRIVER   BO Motor](https://user-images.githubusercontent.com/42414598/137720986-0fe2d9e7-b1fa-4b90-b5e4-375820cd09b1.jpg)
-
 
 ## Raspberry pi based 
 
@@ -175,5 +177,5 @@ Scroll down, and just before the exit 0 line, enter the following:
 ## step 8: check IP in Raspberry pi and Type the link in webBrowser http://Ip_address:5000
 ## Conclusion :
 A surveillance robot which can be integrated into any kind of household. The base controller of the bot will be the powerful Raspberry Pi 3 Model B. A webcam attached to the Pi monitors the area and sends a notification when any trespassing or obtrusion is detected.
- 
+
  
