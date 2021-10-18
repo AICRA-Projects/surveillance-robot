@@ -28,6 +28,8 @@ DTMF mode and Automatic mode.
   * Servo Motor 
 ## Circuit diagram
 ![Rasberry pi with UNO (1)](https://user-images.githubusercontent.com/42414598/137720694-79d02df0-4574-4431-9101-5f597c1c574f.jpg)
+![Rasberry pi with UNO an MOTOR DRIVER](https://user-images.githubusercontent.com/42414598/137720945-d0c3d033-1a93-423b-a033-ddd2fcbd47cc.jpg)
+![Rasberry pi with UNO and MOTOR DRIVER   BO Motor](https://user-images.githubusercontent.com/42414598/137720986-0fe2d9e7-b1fa-4b90-b5e4-375820cd09b1.jpg)
 
 
 ## Raspberry pi based 
