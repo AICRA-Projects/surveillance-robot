@@ -1,4 +1,4 @@
-# surveillance-robot
+# Surveillance-robot
 Robots play a major role in many walks of life and are extensively used in the areas of defence, 
 industries, medical and home applications. They can carry out different risky jobs that cannot be done by human. This 
 paper presents Defence Surveillance robot (DSR) for defence purpose that has metal and magnetic field detection 
@@ -26,6 +26,9 @@ DTMF mode and Automatic mode.
   * DC BO motors
   * Battery and power bank
   * Servo Motor 
+## Circuit diagram
+![Rasberry pi with UNO (1)](https://user-images.githubusercontent.com/42414598/137720694-79d02df0-4574-4431-9101-5f597c1c574f.jpg)
+
 
 ## Raspberry pi based 
 
